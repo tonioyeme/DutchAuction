@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for contracts/NFTDutchAuction_ERC20Bids.sol</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">contracts/</a> NFTDutchAuction_ERC20Bids.sol
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>30/30</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">300% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>30/30</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>6/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>39/39</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.1;
+&nbsp;
+import "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol";
+&nbsp;
+import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
+&nbsp;
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
+&nbsp;
+&nbsp;
+contract NFTDutchAuction_ERC20Bids is ERC721Upgradeable, UUPSUpgradeable, OwnableUpgradeable {
+    uint public startingPrice;
+    uint public endingPrice;
+    uint public duration;
+    address public erc20TokenAddress;
+&nbsp;
+    mapping (uint =&gt; uint) tokenIdToPrice;
+    mapping (uint =&gt; uint) tokenIdToAuctionEnd;
+&nbsp;
+    event AuctionCreated(uint indexed tokenId, uint startingPrice, uint endingPrice, uint duration);
+    event AuctionSuccessful(uint indexed tokenId, uint totalPrice, address winner);
+    event AuctionCancelled(uint indexed tokenId);
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function _authorizeUpgrade(address newImplementation) internal override onlyOwner {}</span>
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function initialize(</span>
+    string memory _name,
+    string memory _symbol,
+    address _erc20TokenAddress,
+    address _erc721TokenAddress,
+    uint256 _nftTokenId,
+    uint256 _reservePrice,
+    uint256 _numBlocksAuctionOpen,
+    uint256 _offerPriceDecrement
+) initializer public {
+<span class="cstat-no" title="statement not covered" >    ERC721Upgradeable.__ERC721_init(_name, _symbol)</span>;
+<span class="cstat-no" title="statement not covered" >    UUPSUpgradeable.__UUPSUpgradeable_init()</span>;
+<span class="cstat-no" title="statement not covered" >    OwnableUpgradeable.__Ownable_init()</span>;
+    startingPrice = _reservePrice;
+    endingPrice = _reservePrice - (_offerPriceDecrement * _numBlocksAuctionOpen);
+    duration = _numBlocksAuctionOpen;
+    erc20TokenAddress = _erc20TokenAddress;
+<span class="cstat-no" title="statement not covered" >    transferFrom(_erc721TokenAddress, msg.sender, _nftTokenId)</span>;
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function createAuction(uint _tokenId) public onlyOwner {</span>
+<span class="cstat-no" title="statement not covered" >        require(_exists(_tokenId), "NFTDutchAuction: Token does not exist")</span>;
+<span class="cstat-no" title="statement not covered" >        require(tokenIdToAuctionEnd[_tokenId] == 0, "NFTDutchAuction: Token is already on auction")</span>;
+        tokenIdToAuctionEnd[_tokenId] = block.timestamp + duration;
+        tokenIdToPrice[_tokenId] = startingPrice;
+<span class="cstat-no" title="statement not covered" >        emit AuctionCreated(_tokenId, startingPrice, endingPrice, duration);</span>
+<span class="cstat-no" title="statement not covered" >        require(tokenIdToAuctionEnd[_tokenId] == 0, "NFTDutchAuction: Token is already on auction")</span>;
+&nbsp;
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function bid(uint _tokenId, uint256 _bidAmount) public {</span>
+<span class="cstat-no" title="statement not covered" >        require(tokenIdToAuctionEnd[_tokenId] &gt; 0, "NFTDutchAuction: Token is not on auction")</span>;
+<span class="cstat-no" title="statement not covered" >        require(block.timestamp &lt; tokenIdToAuctionEnd[_tokenId], "NFTDutchAuction: Auction has already ended")</span>;
+<span class="cstat-no" title="statement not covered" >        require(_bidAmount &gt;= currentPrice(_tokenId), "NFTDutchAuction: Bid too low")</span>;
+<span class="cstat-no" title="statement not covered" >        address tokenOwner = ownerOf(_tokenId);</span>
+<span class="cstat-no" title="statement not covered" >        uint salePrice = tokenIdToPrice[_tokenId];</span>
+        tokenIdToAuctionEnd[_tokenId] = 0;
+        tokenIdToPrice[_tokenId] = 0;
+<span class="cstat-no" title="statement not covered" >        _transfer(tokenOwner, msg.sender, _tokenId)</span>;
+<span class="cstat-no" title="statement not covered" >        IERC20(erc20TokenAddress).transferFrom(msg.sender, tokenOwner, salePrice)</span>;
+<span class="cstat-no" title="statement not covered" >        emit AuctionSuccessful(_tokenId, salePrice, msg.sender);</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >        function cancelAuction(uint _tokenId) public onlyOwner {</span>
+<span class="cstat-no" title="statement not covered" >        require(tokenIdToAuctionEnd[_tokenId] &gt; 0, "NFTDutchAuction: Token is not on auction")</span>;
+        tokenIdToAuctionEnd[_tokenId] = 0;
+        tokenIdToPrice[_tokenId] = 0;
+<span class="cstat-no" title="statement not covered" >        emit AuctionCancelled(_tokenId);</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function currentPrice(uint _tokenId) public view returns (uint) {</span>
+<span class="cstat-no" title="statement not covered" >        require(tokenIdToAuctionEnd[_tokenId] &gt; 0, "NFTDutchAuction: Token is not on auction")</span>;
+<span class="cstat-no" title="statement not covered" >        uint timeLeft = tokenIdToAuctionEnd[_tokenId] - block.timestamp;</span>
+<span class="cstat-no" title="statement not covered" >        if (timeLeft &gt;= duration) {</span>
+<span class="cstat-no" title="statement not covered" >            return startingPrice;</span>
+        } else <span class="cstat-no" title="statement not covered" >if (timeLeft == 0) {</span>
+<span class="cstat-no" title="statement not covered" >            return endingPrice;</span>
+        } else {
+<span class="cstat-no" title="statement not covered" >            uint priceRange = startingPrice - endingPrice;</span>
+<span class="cstat-no" title="statement not covered" >            uint priceDecrement = priceRange / duration;</span>
+<span class="cstat-no" title="statement not covered" >            uint currentPrice = startingPrice - (timeLeft * priceDecrement);</span>
+<span class="cstat-no" title="statement not covered" >            if (currentPrice &lt; endingPrice) {</span>
+<span class="cstat-no" title="statement not covered" >                return endingPrice;</span>
+            } else {
+<span class="cstat-no" title="statement not covered" >                return currentPrice;</span>
+            }
+        }
+    }
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Mar 16 2023 23:58:39 GMT-0700 (Pacific Daylight Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
