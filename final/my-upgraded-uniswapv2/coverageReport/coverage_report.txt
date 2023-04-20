@@ -1,0 +1,256 @@
+Compiling 38 files with 0.8.0
+Compiling 39 files with 0.8.19
+Solc 0.8.0 finished in 724.48ms
+Solc 0.8.19 finished in 1.04s
+Compiler run successful (with warnings)
+[33mwarning[8760]: [0m[33mWarning: This declaration has the same name as another declaration.
+   --> src/contracts/UniswapV2ERC20.sol:120:21:
+    |
+120 | function initialize(address token0, address token1) external virtual override {
+    |                     ^^^^^^^^^^^^^^
+Note: The other declaration is here:
+   --> src/contracts/UniswapV2ERC20.sol:168:1:
+    |
+168 | function token0() external virtual view override returns (address) {
+    | ^ (Relevant source part starts here and spans across multiple lines).
+
+[0m
+
+[33mwarning[8760]: [0m[33mWarning: This declaration has the same name as another declaration.
+   --> src/contracts/UniswapV2ERC20.sol:120:37:
+    |
+120 | function initialize(address token0, address token1) external virtual override {
+    |                                     ^^^^^^^^^^^^^^
+Note: The other declaration is here:
+   --> src/contracts/UniswapV2ERC20.sol:173:1:
+    |
+173 | function token1() external virtual view override returns (address) {
+    | ^ (Relevant source part starts here and spans across multiple lines).
+
+[0m
+
+[33mwarning[2462]: [0m[33mWarning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it "abstract" is sufficient.
+  --> src/contracts/UniswapV2ERC20.sol:23:5:
+   |
+23 |     constructor() public {
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+[0m
+
+[33mwarning[2462]: [0m[33mWarning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it "abstract" is sufficient.
+  --> src/contracts/UniswapV2Pair.sol:61:5:
+   |
+61 |     constructor() public {
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+[0m
+
+[33mwarning[2462]: [0m[33mWarning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it "abstract" is sufficient.
+  --> src/contracts/UniswapV2Factory.sol:15:5:
+   |
+15 |     constructor(address _feeToSetter) public {
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+[0m
+
+[33mwarning[2462]: [0m[33mWarning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it "abstract" is sufficient.
+  --> src/contracts/UniswapV2Migrator.sol:15:5:
+   |
+15 |     constructor(address _factoryV1, address _router) public {
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+[0m
+
+[33mwarning[2462]: [0m[33mWarning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it "abstract" is sufficient.
+  --> src/examples/ExampleComputeLiquidityValue.sol:10:5:
+   |
+10 |     constructor(address factory_) public {
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+[0m
+
+[33mwarning[2462]: [0m[33mWarning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it "abstract" is sufficient.
+  --> src/examples/ExampleFlashSwap.sol:17:5:
+   |
+17 |     constructor(address _factory, address _factoryV1, address router) public {
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+[0m
+
+[33mwarning[2462]: [0m[33mWarning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it "abstract" is sufficient.
+  --> src/examples/ExampleOracleSimple.sol:27:5:
+   |
+27 |     constructor(address factory, address tokenA, address tokenB) public {
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+[0m
+
+[33mwarning[2462]: [0m[33mWarning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it "abstract" is sufficient.
+  --> src/examples/ExampleSlidingWindowOracle.sol:42:5:
+   |
+42 |     constructor(address factory_, uint windowSize_, uint8 granularity_) public {
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+[0m
+
+[33mwarning[2462]: [0m[33mWarning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it "abstract" is sufficient.
+  --> src/examples/ExampleSwapToPrice.sol:19:5:
+   |
+19 |     constructor(address factory_, IUniswapV2Router01 router_) public {
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+[0m
+
+[33mwarning[2462]: [0m[33mWarning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it "abstract" is sufficient.
+  --> src/test/DeflatingERC20.sol:23:5:
+   |
+23 |     constructor(uint _totalSupply) public {
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+[0m
+
+[33mwarning[2462]: [0m[33mWarning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it "abstract" is sufficient.
+  --> src/test/ERC20.sol:23:5:
+   |
+23 |     constructor(uint _totalSupply) public {
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+[0m
+
+[33mwarning[5667]: [0m[33mWarning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+   --> src/contracts/UniswapV2ERC20.sol:154:61:
+    |
+154 | function swap(uint amount0Out, uint amount1Out, address to, bytes calldata data) external virtual override {
+    |                                                             ^^^^^^^^^^^^^^^^^^^
+
+[0m
+
+[33mwarning[5667]: [0m[33mWarning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+   --> src/contracts/UniswapV2Router02.sol:139:5:
+    |
+139 |     uint liquidity,
+    |     ^^^^^^^^^^^^^^
+
+[0m
+
+[33mwarning[5667]: [0m[33mWarning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+   --> src/contracts/UniswapV2Router02.sol:140:5:
+    |
+140 |     uint amountTokenMin,
+    |     ^^^^^^^^^^^^^^^^^^^
+
+[0m
+
+[33mwarning[5667]: [0m[33mWarning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+   --> src/contracts/UniswapV2Router02.sol:141:5:
+    |
+141 |     uint amountETHMin,
+    |     ^^^^^^^^^^^^^^^^^
+
+[0m
+
+[33mwarning[5667]: [0m[33mWarning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+   --> src/contracts/UniswapV2Router02.sol:142:5:
+    |
+142 |     address to,
+    |     ^^^^^^^^^^
+
+[0m
+
+[33mwarning[5667]: [0m[33mWarning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+   --> src/contracts/UniswapV2Router02.sol:143:5:
+    |
+143 |     uint deadline,
+    |     ^^^^^^^^^^^^^
+
+[0m
+
+[33mwarning[5667]: [0m[33mWarning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+   --> src/contracts/UniswapV2Router02.sol:144:5:
+    |
+144 |     bool approveMax,
+    |     ^^^^^^^^^^^^^^^
+
+[0m
+
+[33mwarning[5667]: [0m[33mWarning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+   --> src/contracts/UniswapV2Router02.sol:145:5:
+    |
+145 |     uint8 v, bytes32 r, bytes32 s
+    |     ^^^^^^^
+
+[0m
+
+[33mwarning[5667]: [0m[33mWarning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+   --> src/contracts/UniswapV2Router02.sol:145:14:
+    |
+145 |     uint8 v, bytes32 r, bytes32 s
+    |              ^^^^^^^^^
+
+[0m
+
+[33mwarning[5667]: [0m[33mWarning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+   --> src/contracts/UniswapV2Router02.sol:145:25:
+    |
+145 |     uint8 v, bytes32 r, bytes32 s
+    |                         ^^^^^^^^^
+
+[0m
+
+[33mwarning[5667]: [0m[33mWarning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+   --> src/contracts/UniswapV2Router02.sol:146:38:
+    |
+146 | ) external virtual override returns (uint amountToken, uint amountETH) {
+    |                                      ^^^^^^^^^^^^^^^^
+
+[0m
+
+[33mwarning[5667]: [0m[33mWarning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+   --> src/contracts/UniswapV2Router02.sol:146:56:
+    |
+146 | ) external virtual override returns (uint amountToken, uint amountETH) {
+    |                                                        ^^^^^^^^^^^^^^
+
+[0m
+
+[33mwarning[2072]: [0m[33mWarning: Unused local variable.
+   --> src/contracts/UniswapV2Router02.sol:147:5:
+    |
+147 |     IUniswapV2Pair pair = IUniswapV2Pair(UniswapV2Library.pairFor(factory, token, WETH));
+    |     ^^^^^^^^^^^^^^^^^^^
+
+[0m
+
+[33mwarning[3420]: [0m[33mWarning: Source file does not specify required compiler version! Consider adding "pragma solidity ^0.8.19;"
+--> src/contracts/UniswapV2Router01.sol
+
+[0m
+
+Analysing contracts...
+Running tests...
+| File                                                             | % Lines         | % Statements      | % Branches      | % Funcs          |
+|------------------------------------------------------------------|-----------------|-------------------|-----------------|------------------|
+| node_modules/@uniswap/lib/contracts/libraries/Babylonian.sol     | 0.00% (0/64)    | 0.00% (0/68)      | 0.00% (0/32)    | 0.00% (0/2)      |
+| node_modules/@uniswap/lib/contracts/libraries/BitMath.sol        | 0.00% (0/94)    | 0.00% (0/98)      | 0.00% (0/72)    | 0.00% (0/4)      |
+| node_modules/@uniswap/lib/contracts/libraries/FixedPoint.sol     | 0.00% (0/102)   | 0.00% (0/134)     | 0.00% (0/72)    | 0.00% (0/22)     |
+| node_modules/@uniswap/lib/contracts/libraries/FullMath.sol       | 0.00% (0/50)    | 0.00% (0/64)      | 0.00% (0/16)    | 0.00% (0/6)      |
+| node_modules/@uniswap/lib/contracts/libraries/TransferHelper.sol | 0.00% (0/8)     | 0.00% (0/12)      | 0.00% (0/8)     | 0.00% (0/4)      |
+| script/Counter.s.sol                                             | 0.00% (0/1)     | 0.00% (0/1)       | 100.00% (0/0)   | 0.00% (0/2)      |
+| src/Counter.sol                                                  | 100.00% (2/2)   | 100.00% (2/2)     | 100.00% (0/0)   | 100.00% (2/2)    |
+| src/contracts/UniswapV2ERC20.sol                                 | 88.26% (45/51)  | 92.45% (49/53)    | 100.00% (6/6)   | 100.00% (22/22)  |
+| src/contracts/UniswapV2Factory.sol                               | 94.12% (16/17)  | 89.47% (17/19)    | 90.00% (9/10)   | 100.00% (4/4)    |
+| src/contracts/UniswapV2Migrator.sol                              | 72.72% (8/11)   | 86.67% (13/15)    | 83.33% (5/6)    | 100.00% (1/1)    |
+| src/contracts/UniswapV2Pair.sol                                  | 86.02% (80/93)  | 92.50% (111/120)  | 68.18% (30/44)  | 100.00% (10/10)  |
+| src/contracts/UniswapV2Router02.sol                              | 96.12% (99/103) | 93.00% (120/129)  | 72.92% (35/48)  | 100.00% (21/21)  |
+| src/examples/ExampleComputeLiquidityValue.sol                    | 0.00% (0/7)     | 0.00% (0/9)       | 100.00% (0/0)   | 0.00% (0/4)      |
+| src/examples/ExampleFlashSwap.sol                                | 0.00% (0/31)    | 0.00% (0/41)      | 0.00% (0/20)    | 0.00% (0/1)      |
+| src/examples/ExampleOracleSimple.sol                             | 0.00% (0/13)    | 0.00% (0/14)      | 0.00% (0/6)     | 0.00% (0/2)      |
+| src/examples/ExampleSlidingWindowOracle.sol                      | 0.00% (0/28)    | 0.00% (0/43)      | 0.00% (0/8)     | 0.00% (0/5)      |
+| src/examples/ExampleSwapToPrice.sol                              | 0.00% (0/18)    | 0.00% (0/23)      | 0.00% (0/8)     | 0.00% (0/1)      |
+| src/libraries/Math.sol                                           | 0.00% (0/9)     | 0.00% (0/10)      | 0.00% (0/4)     | 0.00% (0/2)      |
+| src/libraries/SafeMath.sol                                       | 0.00% (0/3)     | 0.00% (0/3)       | 0.00% (0/6)     | 0.00% (0/3)      |
+| src/libraries/UQ112x112.sol                                      | 0.00% (0/2)     | 0.00% (0/2)       | 100.00% (0/0)   | 0.00% (0/2)      |
+| src/libraries/UniswapV2Library.sol                               | 0.00% (0/34)    | 0.00% (0/49)      | 0.00% (0/20)    | 0.00% (0/8)      |
+| src/libraries/UniswapV2LiquidityMathLibrary.sol                  | 0.00% (0/41)    | 0.00% (0/62)      | 0.00% (0/14)    | 0.00% (0/5)      |
+| src/libraries/UniswapV2OracleLibrary.sol                         | 0.00% (0/18)    | 0.00% (0/22)      | 0.00% (0/4)     | 0.00% (0/4)      |
+| Total                                                            | 0.22% (2/889)   | 0.18% (2/1095)    | 0.00% (0/436)   | 1.21% (2/165)    |
